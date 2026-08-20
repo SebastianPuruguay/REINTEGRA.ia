@@ -136,6 +136,35 @@ The model was trained on a diverse dataset with the following distribution:
   - onnxruntime
   - matplotlib
 
+---
+
+## REINTEGRA.ai
+
+**Inteligencia para Inventario Quirúrgico**
+
+Demo local en Streamlit que analiza imágenes JPG, JPEG o PNG y videos MP4 con
+el modelo preentrenado `best.pt`. Genera una imagen o video con cajas, etiquetas
+en español y confianza. Para videos también incluye IDs de seguimiento y una
+línea de tiempo. Los resultados se guardan en `outputs/`.
+
+### Instalación
+
+Desde la raíz del repositorio:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Inicio
+
+```bash
+streamlit run app.py
+```
+
+El modelo debe permanecer en `best.pt`, en la raíz. Al abrir la aplicación,
+sube una imagen o un video `.mp4`, elige la confianza mínima y pulsa
+**Analizar archivo**.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
