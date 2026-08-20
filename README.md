@@ -165,6 +165,11 @@ El modelo debe permanecer en `best.pt`, en la raíz. Al abrir la aplicación,
 sube una imagen o un video `.mp4`, elige la confianza mínima y pulsa
 **Analizar archivo**.
 
+### Despliegue en Streamlit Community Cloud
+
+Selecciona Python 3.12 y usa `app.py` como archivo principal. El archivo
+`packages.txt` instala las bibliotecas Linux requeridas por OpenCV.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
